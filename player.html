@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Now Playing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a href="songs.html">&larr; Back to Library</a>
+</header>
+
+<div class="player-wrapper">
+  <img id="player-cover" src="" alt="Song Cover">
+
+  <h2 id="player-title">Loading...</h2>
+  <p id="player-artist" style="opacity: 0.7;">...</p>
+
+  <audio id="main-audio" controls style="width: 100%; margin-top: 20px;">
+    <source id="audio-source" src="" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="platform-links">
+    <a id="link-yt" class="platform-link" target="_blank">YouTube</a>
+    <a id="link-spot" class="platform-link" target="_blank">Spotify</a>
+    <a id="link-apple" class="platform-link" target="_blank">Apple Music</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
